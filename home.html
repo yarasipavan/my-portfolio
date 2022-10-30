@@ -1,0 +1,229 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Portfolio</title>
+    <link rel="stylesheet" id="theme" href="light.css">
+    <script src="https://kit.fontawesome.com/d63875bb20.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <!-- <img src="images/logo.png" alt="" class="logo"> -->
+        <p class="logo">PAVAN</p>
+        
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#my-projects">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+            <li> <button onclick="toggleTheme()" title="Change Mode" style="cursor:pointer" class="btn3"><i class="fa-solid fa-circle-half-stroke"></i></button></li>
+            
+            <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+           
+            
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        
+    </nav>
+    <div id="header">
+        
+        <div class="container">
+            
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Pavan Kumar Reddy</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey, I am <b>Y PAVAN KUMAR REDDY</b>. Currenttly I am purchusing my B.Tech final year in the stream of Compuer Science Engineering in RGUKT RK Valley. I am interested in Web development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links"onclick="opentab('projects')">Projects</p> -->
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            
+                            <li><span>Front end Development</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front end web development using HTML,CSS, Materialized CSS, Javascript, JQuery.</li>
+                            <li><span>Back end Development</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back end web development using Nodejs,Express,EJS and PHP. Mysql for a database.</li>
+                            <li><span>Java</span></li>
+                            <li><span>C</span></li>
+                            <li><span>Python</span></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>RGUKT Maintance System </span><br>It is a like a communication system between departments (like Electrical, Plumbing, 
+                                etc.) and the users (Students and Faculty). Where Users Request Services from 
+                                departments through Raising a complaint through the Portal. 
+                                I worked as a Full Stack Developer for this project. For Frontend development we 
+                                used HTML (EJS), CSS, JavaScript and Bootstrap. For Backend Development we 
+                                used NodeJS, Express JS. MySQL is used for Database. 
+                                </li>
+                            <li><span>RGUKT Admission Portal 2022</span><br> Worked as a Backend Developer for my college Admissions Portal where I used 
+                                PHP and MySQL. </li>
+                            <li><span>Online Outpass System</span><br>This Project is a Web Application, which will be useful for college hostels. Where 
+                                Students can get out-pass by registering through website. HTML, CSS and 
+                                JavaScript were used for frontend development, whereas PHP was used for 
+                                backend development. </li>
+
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>B.Tech from AP IIIT, RGUKT RK Valley, Kadapa-AP with CGPA of 9.2(till now)</li>
+                            <li><span>2019-2023</span><br>PUCfrom AP IIIT, RGUKT RK Valley, Kadapa-AP with CGPA of 8.7</li>
+                            <li><span>2017</span><br> SSC from AP Model School, Allagadda, Nandyal-AP with CGPA of 9.7 </li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------projects -->
+
+    <div id="my-projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-brands fa-node" style="color:white"></i>
+                    <h2>RGUKT Maintanence System</h2>
+                    <p>It is a like a communication system between departments (like Electrical, Plumbing, 
+                        etc.) and the users (Students and Faculty). Where Users Request Services from 
+                        departments through Raising a complaint through the Portal. 
+                        I worked as a Full Stack Developer for this project. For Frontend development we 
+                        used HTML (EJS), CSS, JavaScript and Bootstrap. For Backend Development we 
+                        used NodeJS, Express JS. MySQL is used for Database.</p>
+                    <!-- <a href="#"> learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-php" style="color:white"></i>
+                    <h2>AP RGUKT Admission Portal -2022</h2>
+                    <p>Worked as a Backend Developer for my college Admissions Portal where I used 
+                        PHP and MySQL.</p>
+                    <!-- <a href="#"> learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-php" style="color:white"></i>
+                    <h2>Online Outpass System</h2>
+                    <p>This Project is a Web Application, which will be useful for college hostels. Where 
+                        Students can get out-pass by registering through website. HTML, CSS and 
+                        JavaScript were used for frontend development, whereas PHP was used for 
+                        backend development.</p>
+                    <!-- <a href="#"> learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> yarasipavan@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9618095243</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/pawan.yarasi" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/yarasipavan143/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pavan-kumar-reddy-yarasi-611a91227" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------copyright -->
+    <div class="copyright">
+        <p>Copyright &copy; YARASI PAVAN KUMAR REDDY</p>
+    </div>
+  <script >
+      var tablinks=document.getElementsByClassName("tab-links");
+      var tabcontents=document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+      }
+
+      var sidemenu=document.getElementById("sidemenu");
+      function openmenu()
+      {
+            sidemenu.style.right="0";
+      }
+      function closemenu()
+      {
+        sidemenu.style.right="-200px";
+      }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwtX4m4u4mtZ0o36_Ho0Xst0xeLMJ62y8eC-ihz3yHt17oYAJTo8ZPrkRbhFI4dXEry/exec'
+    const form = document.forms['submit-to-google-sheet']
+    var msg=document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message Send Successfully";
+            setTimeout(function(){
+                msg.innerHTML="";
+            },5000); //5000 milli seconds=5 seconds
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+   <script>
+    function toggleTheme() {
+        // Obtains an array of all <link>
+        // elements.
+        // Select your element using indexing.
+        var theme = document.getElementsByTagName('link')[0];
+
+        // Change the value of href attribute 
+        // to change the css sheet.
+        if (theme.getAttribute('href') == 'light.css') {
+            theme.setAttribute('href', 'dark.css');
+        } else {
+            theme.setAttribute('href', 'light.css');
+        }
+    }
+</script>
+</body>
+</html>
